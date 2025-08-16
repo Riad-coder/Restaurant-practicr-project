@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rimberio Restaurant</title>
+    <link rel="icon" type="image/x-icon" href="res-logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+   <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <section id="header">
+        <img src="img/res-logo.png" alt="" width="75" height="65">
+        <nav class="navbar" id="navbar">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping fa-1x"></i></a></li>
+            </ul>
+
+        </nav>
+        <div id="bar"><i class="fa-solid fa-bars fa-2xl"></i></div>
+
+        <p class='a' id="noP">Delicious food made with love</p>
+        <button onclick="window.location.href='orderForm.html'">order now</button>
+
+    </section>
+    <section id="about">
+    <div class="about-container">
+        <div class="about-image">
+            <img src="img/hotel.png" alt="Delicious Food">
+        </div>
+        <div class="about-text">
+            <h2>About Us</h2>
+            <p>Welcome to <strong>Rimberio Restaurant</strong>, where we serve delicious and freshly prepared meals with love. 
+               Our chefs use only the finest ingredients to bring you authentic flavors and unforgettable dining experiences.</p>
+            <p>From our kitchen to your table, every dish is made to satisfy your taste buds. Whether you're here for a quick lunch or a family dinner, we’ve got something special for everyone.</p>
+            <button>Learn More</button>
+        </div>
+    </div>
+</section>
+
+<section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-container" id="menu-container">
+        <!-- JS এখানে আইটেম যোগ করবে -->
+    </div>
+</section>
+
+
+    </div>
+</section>
+
+<section id="faq" class="faq-section">
+  <div class="container">
+    <h2>Frequently Asked Questions (FAQ)</h2>
+    
+    <div class="faq-item">
+      <button class="faq-question">What are your restaurant hours?</button>
+      <div class="faq-answer">
+        <p>We are open daily from 9:00 AM to 11:00 PM.</p>
+     </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Do you offer home delivery?</button>
+      <div class="faq-answer">
+        <p>Yes, we provide delivery services. You can place orders online or via phone.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">When are new dishes added to the menu?</button>
+      <div class="faq-answer">
+        <p>We update our menu every three months with new dishes based on customer feedback.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Do you provide vegetarian and non-vegetarian options?</button>
+      <div class="faq-answer">
+        <p>Yes, our menu includes both vegetarian and non-vegetarian options, clearly labeled for each item.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Can we book for large parties or events?</button>
+      <div class="faq-answer">
+        <p>Absolutely. For large parties or events, prior booking is required. You can book via phone or online.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions or want to make a reservation? Send us a message!</p>
+    <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>Rimberio Restaurant</h3>
+      <p>Delicious flavors, fresh ingredients, and mouthwatering dishes—served with love. Experience taste like never before!</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p>Email: info@rimberio.com</p>
+      <p>Phone: +880 1234 567 890</p>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>© 2025 Rimberio Restaurant. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

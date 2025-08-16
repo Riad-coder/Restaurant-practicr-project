@@ -1,0 +1,24 @@
+[
+    {
+        "name": "Cheese Pizza",
+        "price": "$8.99",
+        "image": "img/pizza.png"
+    },
+    {
+        "name": "Beef Burger",
+        "price": "$6.50",
+        "image": "img/burger.png"
+    },
+   {
+        "name": "Italian Pasta",
+        "price": "$10.50",
+        "image": "img/pasta.png"
+    },
+    {
+        "name": "Chocolate Cake",
+        "price": "$15.50",
+        "image": "img/cake.png"
+    }
+       
+   
+]

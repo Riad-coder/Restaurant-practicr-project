@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="res-logo.png">
+    <title>Order Form</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: antiquewhite;
+            
+        }
+        .form-container{
+            max-width: 1000px;
+            margin: 50px 15%;
+            padding: 20px;
+            background-color: rgb(211, 199, 199);
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h1{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-container form{
+            display: flex;
+            flex-direction: column;
+        }
+        .form-container input, .form-container textarea, .form-container select{
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: auto;
+            height: 70px;
+            outline: none;
+            font-size: medium;
+        }
+        .form-container input::placeholder{
+            color: #aaa;
+            font-size: medium;
+        }
+        .form-container textarea::placeholder{
+            color: #aaa;
+            font-size: 15px;
+        }
+        .form-container select{
+            color: #aaa;
+            font-size: medium;
+        }
+           
+        .form-container select option{
+            font-size: medium;
+            color: #363030;
+        }
+        button{
+            background-color: #f75858;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: medium;
+        }
+       button:hover{
+           background-color: #a41c1c;
+       }
+       @media (max-width:400px){
+        .form-container{
+            margin: 50px 10px;
+        }
+
+       }
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Order Form</h1>
+    <form>
+        <input type="text" placeholder="enter your name" id="name" required><br>
+        <input type="email" placeholder="enter your email" id="email" required><br>
+        <input type="number" placeholder="enter your phone number" id="phone" required><br>
+        <textarea placeholder="enter your address details" id="address" required></textarea><br>
+        <select name="menu" id="menu">
+            <option value="choose an item">Choose an item</option>
+            
+        </select><br>
+        <input type="number" placeholder="enter quantity" id="quantity" required><br>
+
+        <button>next</button>
+
+    </form>
+    <script>
+        fetch('menu-items.json').then(r => r.json()).then(item => {
+            const menu = document.getElementById('menu')
+            item.forEach(e => {
+                const option = document.createElement('option')
+                option.value = e.name
+                option.textContent = e.name
+                option.innerHTML = `${e.name}    ${e.price} BDT `
+                menu.appendChild(option)
+                
+            });
+        })
+    </script>
+    </div>
+</body>
+</html>
